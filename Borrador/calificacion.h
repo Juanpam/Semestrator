@@ -4,11 +4,14 @@
 #include <QObject>
 #include <QString>
 #include <QTextStream>
+#include <QDebug>
 
+//QTextStream cout (stdout);
+//QTextStream cin (stdin);
 
 
 enum DIFICULTAD{
-    FACIL,MEDIO,DIFICIL
+    FACIL,MEDIO,DIFICIL,NIVELDIOS
 };
 
 class Calificacion : public QObject
@@ -19,11 +22,12 @@ public:
     explicit Calificacion(QString nombre, float nota,int porcentaje, enum DIFICULTAD dificultad,QObject *parent = 0);
     explicit Calificacion(QString nombre, int porcentaje, enum DIFICULTAD dificultad,QObject *parent = 0);
     explicit Calificacion(QString nombre,int porcentaje ,QObject *parent = 0);
-    ~Calificacion();
     float getNotaReal() const;
     float getNotaEstimada();
     int getPorcentaje() const;
     QString getNombre() const;
+    ~Calificacion();
+
 
 signals:
 
@@ -40,5 +44,5 @@ private:
 
 };
 
-#endif // CALIFICACION_H
+#endif  //CALIFICACION_H
 

@@ -13,15 +13,21 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    principal.cpp \
     calificacion.cpp \
-    materia.cpp
+    materia.cpp \
+    pInicial.cpp \
+    pPrincipal.cpp \
+    semestre.cpp \
+    estudiante.cpp
 
-HEADERS  += mainwindow.h \
-    principal.h \
+HEADERS  += \
     calificacion.h \
-    materia.h
+    materia.h \
+    pInicial.h \
+    pPrincipal.h \
+    semestre.h \
+    estudiante.h
 
-FORMS    += mainwindow.ui \
-    principal.ui
+FORMS    += \
+    principal.ui \
+    inicial.ui

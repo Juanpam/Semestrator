@@ -1,15 +1,24 @@
 #include <QApplication>
-#include "calificacion.h"
 #include "materia.h"
-#include "mainwindow.h"
-#include "principal.h"
+#include "pInicial.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    pInicial w;
     w.show();
-    Calificacion lel(QString("Materia 1"),0,20,FACIL);
-    lel.getNotaEstimada();
-    Materia mat1(QString("Matematicas"));
+    /*Materia mat1(QString("Matematicas"),4);
+    QList<Calificacion*> xD;
+    for(int a=0; a<5;a++)
+    {
+        mat1.addCalificacion(new Calificacion((QString("Nota ")+QString::number(a)),a,20,FACIL));
+    }
+    xD = mat1.getCalificaciones();
+    for(int a=0;a<5;a++)
+    {
+        qDebug()<<xD[a]->getNombre() << " " << (xD[a]->getPorcentaje()*xD[a]->getNotaReal())/100 << endl;
+    }
+    //Calificacion * lal = new Calificacion(QString("Parcial 28"),5,20,DIFICIL);
+    //mat1.addCalificacion(lal);
+    mat1.getPromedioReal();*/
     return a.exec();
 }
