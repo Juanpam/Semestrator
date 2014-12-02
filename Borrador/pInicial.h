@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include "pPrincipal.h"
-
 namespace Ui {
 class inicial;
 }
@@ -25,7 +24,7 @@ private slots:
 private:
     Ui::inicial *ui;
     pPrincipal * userScreen;
-
+    Estudiante * estudianteActual;
 };
 
 #endif // PINICIAL_H

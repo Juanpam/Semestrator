@@ -15,46 +15,90 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" colspan="3">
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QPushButton" name="Semestre">
-        <property name="text">
-         <string>Semestre 1</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>Agregar Semestre</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="labelMaterias">
-      <property name="text">
-       <string>Lista de materias</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
+    <item row="3" column="1">
      <widget class="QLabel" name="labelCalificaciones">
       <property name="text">
        <string>Lista de calificaciones</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QListView" name="ListaM"/>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Gráfica de rendimiento</string>
+      </property>
+     </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QListView" name="listaC"/>
+    <item row="6" column="0" colspan="3">
+     <widget class="QGraphicsView" name="graphicsView"/>
     </item>
-    <item row="2" column="2">
+    <item row="3" column="0">
+     <widget class="QLabel" name="labelMaterias">
+      <property name="text">
+       <string>Lista de materias</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="nombreEstudiante">
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Bienvenido, </string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="Semestre">
+          <property name="text">
+           <string>Semestre 1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="siguienteSemestre">
+          <property name="text">
+           <string>Siguiente Semestre</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="anteriorSemetre">
+          <property name="text">
+           <string>Anterior Semestre</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="agregarSemestre">
+          <property name="text">
+           <string>Agregar Semestre</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="2">
      <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="InsertarM">
+        <property name="text">
+         <string>Insertar Materia</string>
+        </property>
+       </widget>
+      </item>
       <item>
        <widget class="QPushButton" name="InsertarC">
         <property name="text">
@@ -78,15 +122,8 @@
       </item>
      </layout>
     </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Gráfica de rendimiento</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0" colspan="3">
-     <widget class="QGraphicsView" name="graphicsView"/>
+    <item row="4" column="0">
+     <widget class="QColumnView" name="columnView"/>
     </item>
    </layout>
   </widget>
